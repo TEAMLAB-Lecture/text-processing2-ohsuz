@@ -4,7 +4,6 @@ import unittest
 import random
 import text_processing2 as tp
 
-
 class TestTextProcessing(unittest.TestCase):
     def test_digits_to_words(self):
         test_str = ""
@@ -83,3 +82,7 @@ class TestTextProcessing(unittest.TestCase):
         test_str = "....."
         pred = tp.to_camel_case(test_str)
         self.assertEqual(pred, ".....")
+
+
+if __name__ == '__main__':  
+    unittest.main()
